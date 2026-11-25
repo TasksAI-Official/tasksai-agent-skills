@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tasksai-agent-skills"
+version = "0.3.1"
+description = "Free MCP discovery and budget-limited, single-use TasksAI skill purchases"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "TasksAI"}]
+keywords = ["mcp", "x402", "agents", "realtor", "farmer", "teacher", "pay-per-use"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+]
+dependencies = ["mcp==2.3.0", "httpx==0.28.1", "eth-account==0.14.0"]
+
+[project.urls]
+Homepage = "https://tasksai-agent-commerce-live-10437713249.us-central1.run.app/connect"
+Demonstrations = "https://tasksai-agent-commerce-live-10437713249.us-central1.run.app/demos"
+Repository = "https://github.com/TasksAI-Official/tasksai-agent-skills"
+Issues = "https://github.com/TasksAI-Official/tasksai-agent-skills/issues"
+
+[project.scripts]
+tasksai-agent-skills = "realtortasksai_connector.onboarding:main"
+realtortasksai-connector = "realtortasksai_connector.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["realtortasksai_connector*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

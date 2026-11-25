@@ -1,0 +1,16 @@
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env*
+*.sqlite*
+*.db
+policy.json
+wallet*.json
+*-backup-*
+.mcpregistry_*
+verification*.json

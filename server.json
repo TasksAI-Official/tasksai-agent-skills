@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.TasksAI-Official/tasksai-agent-skills",
+  "title": "TasksAI Agent Skills: Realtor, Farmer and Teacher",
+  "description": "Find Realtor, Farmer and Teacher skills free; buy single-use instructions with budget-limited x402.",
+  "version": "0.3.1",
+  "websiteUrl": "https://tasksai-agent-commerce-live-10437713249.us-central1.run.app/connect",
+  "repository": {
+    "url": "https://github.com/TasksAI-Official/tasksai-agent-skills",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "tasksai-agent-skills",
+      "version": "0.3.1",
+      "runtimeHint": "uvx",
+      "transport": {"type": "stdio"},
+      "packageArguments": [
+        {"type": "positional", "value": "serve"},
+        {
+          "type": "named",
+          "name": "--product",
+          "description": "Choose the skill library; install another connection for each additional library.",
+          "default": "realtor",
+          "choices": ["realtor", "farmer", "teacher"],
+          "isRequired": true
+        }
+      ]
+    }
+  ]
+}

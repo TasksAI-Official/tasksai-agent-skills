@@ -8,7 +8,7 @@ agent search. Purchases use the buyer's USDC budget, not human TasksAI credits.
 Use Python 3.11 or newer. In a dedicated virtual environment, run:
 
 ```sh
-python -m pip install tasksai-agent-skills==0.3.1
+python -m pip install tasksai-agent-skills==0.3.2
 tasksai-agent-skills setup --client manual --product all
 tasksai-agent-skills doctor --product all --json
 ```
@@ -30,15 +30,15 @@ No private key or policy is embedded in this configuration.
   "mcpServers": {
     "tasksai-realtor-pay-per-use": {
       "command": "uvx",
-      "args": ["--from", "tasksai-agent-skills==0.3.1", "tasksai-agent-skills", "serve", "--product", "realtor"]
+      "args": ["--from", "tasksai-agent-skills==0.3.2", "tasksai-agent-skills", "serve", "--product", "realtor"]
     },
     "tasksai-farmer-pay-per-use": {
       "command": "uvx",
-      "args": ["--from", "tasksai-agent-skills==0.3.1", "tasksai-agent-skills", "serve", "--product", "farmer"]
+      "args": ["--from", "tasksai-agent-skills==0.3.2", "tasksai-agent-skills", "serve", "--product", "farmer"]
     },
     "tasksai-teacher-pay-per-use": {
       "command": "uvx",
-      "args": ["--from", "tasksai-agent-skills==0.3.1", "tasksai-agent-skills", "serve", "--product", "teacher"]
+      "args": ["--from", "tasksai-agent-skills==0.3.2", "tasksai-agent-skills", "serve", "--product", "teacher"]
     }
   }
 }

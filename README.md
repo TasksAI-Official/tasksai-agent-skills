@@ -24,7 +24,7 @@ For developers, create a separate environment, then install the published packag
 ```sh
 python3 -m venv .venv
 # Mac or Linux:
-.venv/bin/python -m pip install tasksai-agent-skills==0.3.1
+.venv/bin/python -m pip install tasksai-agent-skills==0.3.2
 .venv/bin/tasksai-agent-skills setup --client codex --product all
 .venv/bin/tasksai-agent-skills doctor --product all
 ```
@@ -32,7 +32,7 @@ python3 -m venv .venv
 On Windows PowerShell, replace the last three commands with:
 
 ```powershell
-.venv\Scripts\python.exe -m pip install tasksai-agent-skills==0.3.1
+.venv\Scripts\python.exe -m pip install tasksai-agent-skills==0.3.2
 .venv\Scripts\tasksai-agent-skills.exe setup --client codex --product all
 .venv\Scripts\tasksai-agent-skills.exe doctor --product all
 ```
@@ -45,12 +45,12 @@ preserved. Restart the application after setup.
 If you already use `uv`, you can run one MCP server directly:
 
 ```sh
-uvx --from tasksai-agent-skills==0.3.1 tasksai-agent-skills serve --product realtor
+uvx --from tasksai-agent-skills==0.3.2 tasksai-agent-skills serve --product realtor
 ```
 
 Replace `realtor` with `farmer` or `teacher` to select another catalog. The
 registry listing lets the installer choose this product. See
-[manual configuration](docs/installation.md) for all three connections.
+[manual configuration](https://github.com/TasksAI-Official/tasksai-agent-skills/blob/v0.3.2/docs/installation.md) for all three connections.
 
 ## First free search
 
@@ -68,7 +68,7 @@ details in your workspace.
 The package includes **no wallet, private key, merchant credentials, funds, or
 permission to spend**. A wallet owner must provide a funded **Base-network USDC**
 wallet file and set a total budget. Setup prints the authorization command.
-See [purchasing and recovery](docs/purchasing.md) before enabling payments.
+See [purchasing and recovery](https://github.com/TasksAI-Official/tasksai-agent-skills/blob/v0.3.2/docs/purchasing.md) before enabling payments.
 
 Each purchase obtains instructions for one execution. The agent should complete
 that execution locally and call `complete_skill_use`. Recovery resumes the
@@ -103,6 +103,6 @@ it does not license the separately purchased instruction content. Once delivered
 plaintext cannot be made impossible to copy; the single-use terms and agent
 instructions govern its permitted use.
 
-For development and release checks, see [development](docs/development.md).
+For development and release checks, see [development](https://github.com/TasksAI-Official/tasksai-agent-skills/blob/v0.3.2/docs/development.md).
 Report connector defects through the repository's Issues page. Do not post
 wallet files, private keys, payment proofs, paid instructions, or client data.

@@ -2,7 +2,7 @@
 
 This public repository is the standalone buyer connector. The merchant service,
 paid instruction catalogs, wallets and customer records are maintained separately.
-The `0.3.1` release carries the existing `0.3.0` connector behavior with public
+The `0.3.2` release carries the existing `0.3.0` connector behavior with public
 packaging, documentation and registry metadata.
 
 ```sh
@@ -12,7 +12,7 @@ python -m pytest
 python -m build
 python -m twine check dist/*
 python scripts/audit_distribution.py
-python scripts/verify_clean_install.py --wheel dist/tasksai_agent_skills-0.3.1-py3-none-any.whl
+python scripts/verify_clean_install.py --wheel dist/tasksai_agent_skills-0.3.2-py3-none-any.whl
 ```
 
 Use the executable inside `.venv` or activate the environment first. The clean

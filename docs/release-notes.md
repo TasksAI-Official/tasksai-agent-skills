@@ -1,4 +1,8 @@
-# TasksAI Agent Skills 0.3.1
+# TasksAI Agent Skills 0.3.2
+
+Corrects the installation, purchasing and development documentation links on
+PyPI by pointing them to the public repository. Connector behavior is unchanged
+from version 0.3.1.
 
 The free connector is available as a standalone public developer repository,
 Python package, and official MCP Registry entry. It connects compatible local

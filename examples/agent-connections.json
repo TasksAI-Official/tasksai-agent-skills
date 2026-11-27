@@ -2,15 +2,15 @@
   "mcpServers": {
     "tasksai-realtor-pay-per-use": {
       "command": "uvx",
-      "args": ["--from", "tasksai-agent-skills==0.3.1", "tasksai-agent-skills", "serve", "--product", "realtor"]
+      "args": ["--from", "tasksai-agent-skills==0.3.2", "tasksai-agent-skills", "serve", "--product", "realtor"]
     },
     "tasksai-farmer-pay-per-use": {
       "command": "uvx",
-      "args": ["--from", "tasksai-agent-skills==0.3.1", "tasksai-agent-skills", "serve", "--product", "farmer"]
+      "args": ["--from", "tasksai-agent-skills==0.3.2", "tasksai-agent-skills", "serve", "--product", "farmer"]
     },
     "tasksai-teacher-pay-per-use": {
       "command": "uvx",
-      "args": ["--from", "tasksai-agent-skills==0.3.1", "tasksai-agent-skills", "serve", "--product", "teacher"]
+      "args": ["--from", "tasksai-agent-skills==0.3.2", "tasksai-agent-skills", "serve", "--product", "teacher"]
     }
   }
 }
